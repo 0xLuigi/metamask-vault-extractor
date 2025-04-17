@@ -5,6 +5,15 @@
 ## Description
 A secure tool to recover seed phrases and private keys from MetaMask vault data.
 
+## Overview
+
+This tool helps users extract important credentials from MetaMask vault files:
+- Seed phrases (mnemonic)
+- Private keys for imported accounts
+- Associated Ethereum addresses
+
+All sensitive data is processed locally on your machine.
+
 ## Features
 
 - **Secure Processing**: All decryption happens locally without transmitting sensitive data
