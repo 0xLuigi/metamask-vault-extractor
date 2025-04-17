@@ -22,7 +22,7 @@ All sensitive data is processed locally on your machine.
 - **Hidden Password Input**: Masks passwords during input for security
 - **UTF-8 Support**: Handles passwords with special characters
 
-## Installation
+## Installation, Find Data and Usage
 
 ### Step 1: Install Python
 1. Download Python from the official website: [https://www.python.org/downloads/](https://www.python.org/downloads/)
