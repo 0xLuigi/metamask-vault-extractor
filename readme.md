@@ -41,8 +41,18 @@ Install required Python libraries using pip:
 ```bash
 pip install cryptography eth-account eth-utils
 ```
+### Step 3: Find Your MetaMask Vault Data
 
-### Step 3: Prepare Required Files
+To create `vault_data.txt`, you need your MetaMask vault data (JSON with `data`, `iv`, `salt`). MetaMask stores this in your browser’s local storage as `.ldb` files (LevelDB). Here’s where to find them on your PC:
+
+- Enable **Show hidden files** in your file explorer to access these paths:
+  - **Windows (Chrome)**: `C:\Users\YOUR_USERNAME\AppData\Local\Google\Chrome\User Data\Default\Local Extension Settings\nkbihfbeogaeaoehlefnkodbefgpgknn`
+  - **Windows (Firefox)**: `C:\Users\YOUR_USERNAME\AppData\Roaming\Mozilla\Firefox\Profiles\YOUR_PROFILE\storage\default\moz-extension+++UUID`
+  - **macOS (Chrome)**: `~/Library/Application Support/Google/Chrome/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn`
+  - **Linux (Ubuntu, Chrome)**: `~/.config/google-chrome/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn`
+- Look for a file like `000003.ldb` or similar (number can be higher). Open it with <a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener noreferrer">Notepad++</a> or use <a href="https://www.emeditor.com/" target="_blank" rel="noopener noreferrer">EmEditor Free</a> to find the JSON vault data (containing `data`, `iv`, `salt`).
+
+### Step 4: Prepare Required Files
 1. Open a file named vault_data.txt containing test MetaMask vault data.
 Replace the **`data`**, **`iv`**, and **`salt`** fields with your own vault data.
 - Field Formats:
