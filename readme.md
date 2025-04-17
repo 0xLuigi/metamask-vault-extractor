@@ -53,7 +53,7 @@ To create `vault_data.txt`, you need your MetaMask vault data (JSON with `data`,
 - Look for a file like `000003.ldb`, `000478.log` or similar (number can be higher). Open it with <a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener noreferrer">Notepad++</a> or use <a href="https://www.emeditor.com/" target="_blank" rel="noopener noreferrer">EmEditor Free</a> to find the JSON vault data (containing `data`, `iv`, `salt`).
 
 ![chrome data](images/chrome.png) 
-- **Firefox**, it stores this data in a file with a number (e.g., `39865`)
+- **Firefox Browser** it stores this data in a file with a number (e.g., `39865`)
 
 ![firefox data](images/firefox.png) 
 
