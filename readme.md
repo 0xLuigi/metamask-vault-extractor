@@ -47,17 +47,19 @@ To create `vault_data.txt`, you need your MetaMask vault data (JSON with `data`,
 
 - Enable **Show hidden files** in your file explorer to access these paths:
   - **Windows (Chrome)**: `C:\Users\YOUR_USERNAME\AppData\Local\Google\Chrome\User Data\Default\Local Extension Settings\nkbihfbeogaeaoehlefnkodbefgpgknn`
-  - **Windows (Firefox)**: `C:\Users\YOUR_USERNAME\AppData\Roaming\Mozilla\Firefox\Profiles\YOUR_PROFILE\storage\default\moz-extension+++UUID`
+  - **Windows (Firefox)**: `C:\Users\XXXX\AppData\Roaming\Mozilla\Firefox\Profiles\XXXXXXX.default-release\storage\default\moz-extension+++XXXXX-XXXXX-XXXXX-XXXX-XXX^userContextId=XXXXXX\idb\3647222921wleabcEoxlt-eengsairo.files`
   - **macOS (Chrome)**: `~/Library/Application Support/Google/Chrome/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn`
   - **Linux (Ubuntu, Chrome)**: `~/.config/google-chrome/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn`
-- Look for a file like `000003.ldb` or similar (number can be higher). Open it with <a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener noreferrer">Notepad++</a> or use <a href="https://www.emeditor.com/" target="_blank" rel="noopener noreferrer">EmEditor Free</a> to find the JSON vault data (containing `data`, `iv`, `salt`). **Firefox**, it stores this data in a file with a number (e.g., `709`)
+- Look for a file like `000003.ldb`, `000478.log` or similar (number can be higher). Open it with <a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener noreferrer">Notepad++</a> or use <a href="https://www.emeditor.com/" target="_blank" rel="noopener noreferrer">EmEditor Free</a> to find the JSON vault data (containing `data`, `iv`, `salt`).
+
+![chrome data](images/chrome.png) 
+- **Firefox**, it stores this data in a file with a number (e.g., `39865`)
+
+![firefox data](images/firefox.png) 
 
 ### Step 4: Prepare Required Files
 1. Open a file named vault_data.txt containing test MetaMask vault data.
 Replace the **`data`**, **`iv`**, and **`salt`** fields with your own vault data.
-
-
-
 - Field Formats:
      - **`data`**: Base64-encoded string of encrypted vault data, typically 500–2000+ characters, depending on the vault’s contents.
      - **`iv`**: Base64-encoded initialization vector, usually 16 bytes (~24 characters, including `=` padding).
