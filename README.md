@@ -45,10 +45,10 @@ pip install cryptography eth-account eth-utils
 ### Step 3: Prepare Required Files
 1. Open a file named vault_data.txt containing test MetaMask vault data.
 Replace the data, iv, and salt fields with your own vault data.
-2. Open a file named password_list.txt, remove the test passwords, and add your own passwords (one per line). 
+2. Open a file named password_list.txt, remove the test passwords and add your own passwords (one per line). 
 
 ## Usage
-1. Open a terminal and navigate to the script's directory
+1. Open a terminal and navigate to the script's directory. For Windows users, you can simply type `cmd` in the address bar of the script’s folder and press Enter to open a Command Prompt in that directory.
 2. Run the script:
    ```bash
    python vault_extractor.py
@@ -59,15 +59,19 @@ Replace the data, iv, and salt fields with your own vault data.
    - Extract and display seed phrases and private keys
    - Save results to `decrypt_data.txt`
 
+## Security Notes
+
+- **Secure Storage**: Store `vault_data.txt`, `password_list.txt`, and `decrypt_data.txt` securely, as they contain sensitive information (seed phrases and private keys).
+- **Offline Environment**: For maximum security, I recommend running this tool on a **live Ubuntu USB** without an internet connection. This minimizes the risk of malware or network attacks exposing your seed phrases or private keys. Boot into a live Ubuntu session, copy the script and input files to the USB, and run the tool offline. Stay safe! 😄
+
 ## Troubleshooting
 
 - **File Not Found Errors**: Ensure `vault_data.txt` and `password_list.txt` are in the same directory as the script
 - **Decryption Errors**: Check that passwords are correctly entered and the vault data is valid
 - **Unicode Errors**: Make sure all files are saved with UTF-8 encoding
 
-## Credits
+## Support the Creator
 
-Created by MetaMask Guide Luigi
-If this tool helped you, consider supporting my work 
-by sending a donation to my Ethereum address:
-0x8A00f43C099bEB3F5d3C289e8b93c71c32B4d52e
+Built with ❤️ by MetaMask Guide Luigi!  
+Love this tool? Show some support by sending a donation to my Ethereum address: `0x8A00f43C099bEB3F5d3C289e8b93c71c32B4d52e`. 
+Every little bit helps me keep creating cool stuff! 😄
