@@ -50,11 +50,14 @@ To create `vault_data.txt`, you need your MetaMask vault data (JSON with `data`,
   - **Windows (Firefox)**: `C:\Users\YOUR_USERNAME\AppData\Roaming\Mozilla\Firefox\Profiles\YOUR_PROFILE\storage\default\moz-extension+++UUID`
   - **macOS (Chrome)**: `~/Library/Application Support/Google/Chrome/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn`
   - **Linux (Ubuntu, Chrome)**: `~/.config/google-chrome/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn`
-- Look for a file like `000003.ldb` or similar (number can be higher). Open it with <a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener noreferrer">Notepad++</a> or use <a href="https://www.emeditor.com/" target="_blank" rel="noopener noreferrer">EmEditor Free</a> to find the JSON vault data (containing `data`, `iv`, `salt`).
+- Look for a file like `000003.ldb` or similar (number can be higher). Open it with <a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener noreferrer">Notepad++</a> or use <a href="https://www.emeditor.com/" target="_blank" rel="noopener noreferrer">EmEditor Free</a> to find the JSON vault data (containing `data`, `iv`, `salt`). **Firefox**, it stores this data in a file with a number (e.g., `709`)
 
 ### Step 4: Prepare Required Files
 1. Open a file named vault_data.txt containing test MetaMask vault data.
 Replace the **`data`**, **`iv`**, and **`salt`** fields with your own vault data.
+
+
+
 - Field Formats:
      - **`data`**: Base64-encoded string of encrypted vault data, typically 500–2000+ characters, depending on the vault’s contents.
      - **`iv`**: Base64-encoded initialization vector, usually 16 bytes (~24 characters, including `=` padding).
