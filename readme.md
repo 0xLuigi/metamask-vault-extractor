@@ -44,7 +44,12 @@ pip install cryptography eth-account eth-utils
 
 ### Step 3: Prepare Required Files
 1. Open a file named vault_data.txt containing test MetaMask vault data.
-Replace the data, iv, and salt fields with your own vault data.
+Replace the **`data`**, **`iv`**, and **`salt`** fields with your own vault data.
+- Field Formats:
+     - **`data`**: Base64-encoded string of encrypted vault data, typically 500–2000+ characters, depending on the vault’s contents.
+     - **`iv`**: Base64-encoded initialization vector, usually 16 bytes (~24 characters, including `=` padding).
+     - **`salt`**: Base64-encoded salt, standardly 32 bytes (~44 characters, including `=` padding).
+   - Ensure the file is saved in **UTF-8 encoding** to avoid decoding errors.
 2. Open a file named password_list.txt, remove the test passwords and add your own passwords (one per line). 
 
 ## Usage
