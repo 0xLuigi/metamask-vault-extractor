@@ -25,7 +25,7 @@ All sensitive data is processed locally on your machine.
 ## Installation
 
 ### Step 1: Install Python
-1. Download Python from the [official website](https://www.python.org/downloads/)
+1. Download Python from the official website: <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a>
 2. During installation, **check "Add Python to PATH"** to make Python accessible from command line
 
 ![Add Python to PATH Image](images/python.png)
